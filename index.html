@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon"/>
+    <meta name="description" content="Control Finance - Seu controle financeiro"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/resume.css"/>
+    <link rel="stylesheet" href="./src/styles/buttons.css"/>
+    <link rel="stylesheet" href="./src/styles/contValues.css"/>
+    <link rel="stylesheet" href="./src/styles/containerRegister.css"/>
+    <link rel="stylesheet" href="./src/styles/values.css"/>
+    <link rel="stylesheet" href="./src/styles/dialog.css"/>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    
+    <!-- FONTE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="https://kit.fontawesome.com/fb2208b0dd.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body> 
+    <div class="container__body">
+      <div class="container__header">
+        <header>
+          <h1 class="title__header">Control <span>Finance</span></h1>
+          <button class="button__header">Registrar novo Valor</button>
+        </header>
+      </div>
+      <main id="app">
+        <div>
+          <div class="finance__container">
+            <h2 class="title__finance">Resumo financeiro</h2>
+            <div class="container__button">
+              <button class="all__finance active" >Todos</button>
+              <button class="entrace__finance">Entrada</button>
+              <button class="exit__finance">Saida</button>
+            </div>
+          </div>
+          
+          
+        </div>
+        <ul class="container__ul">
+            <li class="value__ul">
+              <h3 class="plus__cont">Soma dos Valores</h3>
+              <p class="total__cont">Preco</p>
+            </li>
+          </ul>
+          
+          <div class="div__register">
+            <div class="container__div">
+              <h3 class="title__register">Nenhum Valor Cadastrado</h3>
+              <button class="button__register">Registrar Novo Valor</button>
+            </div>
+          </div>
+          
+          <div class="values">
+            <ul class="list__value">
+              <!-- <li class="type__value">
+                <p class="price">preco</p>
+                <div class="double">
+                  <h3 class="type"><p class="text">tipo</p></h3>
+                  <button class="delete">
+                     <i class="fa-solid fa-trash" style="color: #d6d6d6;"></i> 
+                  </button>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+          
+        </main>
+      </div>
+      <dialog>
+        <div class="dialog__container">
+          <div class="container__head">
+            <h2 class="title__head">Registro de valor</h2>
+            <button class="exit__head">x</button>
+          </div>
+          <p class="text__dialog">Digite o valor e em seguida aperte no botão referente ao tipo do valor </p>
+          <div class="sett__value">
+            <h3 class="title__sett">Valor</h3>
+            <input type="number" placeholder="R$ 00,00">
+          </div>
+          <div class="choose">
+            <h3 class="title__choose">Tipo de Valor</h3>
+            <div class="button__div">
+              <button class="entrace__choose">Entrada</button>
+              <button class="exit__choose">Saida</button>
+            </div>
+          </div>
+          <div class="option">
+            <button class="option__cancel">Cancelar</button>
+            <button class="option__value">Inserir Valor</button>
+          </div>
+        </div>
+      </dialog>
+      <script src="./src/scripts/valuesData.js"></script>
+      <script src="./src/scripts/index.js"></script>
+      <script src="./src/scripts/modal.js"></script>
+  </body>
+</html>

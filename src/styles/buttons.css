@@ -1,0 +1,103 @@
+.button__header{
+    cursor: pointer;
+    height: 32px;
+    width: 100%;
+    background: var(--color-brand-1);
+    border: 1.5px solid var(--color-brand-1);
+    border-radius: 8px;
+    color: var(--fixed-white);
+}
+
+.button__header:hover{
+    background: var(--color-brand-2);
+    border: 1.5px solid var(--color-brand-2);
+    border-radius: 8px;
+    color: var(--fixed-white);
+}
+
+.all__finance{
+    cursor: pointer;
+    font-family: var(--font-family-1);
+    width: 70px;
+    height: 32px;       
+    background: var(--color-mode);
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+    color: var(--color-grey-1);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+    line-height: var(--font-line-heigth-1);
+} 
+
+.all__finance:hover{
+    background: var(--color-brand-3);
+    border: 1.5px solid var(--color-brand-1);
+    color: var(--color-brand-1);
+}
+
+.entrace__finance{
+    font-family: var(--font-family-1);
+    width: 89px;
+    height: 32px;
+    background: var(--color-mode);
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+    color: var(--color-grey-1);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+    line-height: var(--font-line-heigth-1);
+}
+
+.entrace__finance:hover{
+    background: var(--color-brand-3);
+    border: 1.5px solid var(--color-brand-1);
+    color: var(--color-brand-1);
+}
+
+.exit__finance{
+    font-family: var(--font-family-1);
+    width: 74px;
+    height: 32px;
+    background: var(--color-mode);
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+    color: var(--color-grey-1);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+    line-height: var(--font-line-heigth-1);
+}
+
+
+.exit__finance:hover{
+    background: var(--color-brand-3);
+    border: 1.5px solid var(--color-brand-1);
+    color: var(--color-brand-1);
+}
+
+.button__register{
+    cursor: pointer;
+    width: 164 px;
+    height: 17px;
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    line-height: 17px;
+    color: var(--color-grey-2);
+    border: none;
+}
+
+.button__register:hover{
+    text-decoration: underline;
+}
+
+@media (min-width:1024px){
+    .button__header{
+        width: 136px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .button__header{
+        width: 200px;
+        height: 32px;
+    }
+}
